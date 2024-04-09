@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.TextFormatting;
 using System.Windows.Shapes;
 
 namespace Sistema_Escolar.Telas
@@ -22,6 +23,13 @@ namespace Sistema_Escolar.Telas
         public CadastroEscola()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            TelaLogin tela = new TelaLogin();
+            this.Visibility = Visibility.Collapsed;
+            tela.ShowDialog();
         }
     }
 }

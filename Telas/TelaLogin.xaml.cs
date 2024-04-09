@@ -27,6 +27,14 @@ namespace Sistema_Escolar.Telas
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             CadastroAluno tela = new CadastroAluno();
+            this.Visibility = Visibility.Collapsed;
+            tela.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            TelaConsulta tela = new TelaConsulta();
+            tela.Visibility = Visibility.Collapsed;
             tela.Show();
         }
     }

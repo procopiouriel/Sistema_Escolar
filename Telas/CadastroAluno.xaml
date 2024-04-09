@@ -5,26 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_Escolar.Telas"
         mc:Ignorable="d"
-        Title="CadastroAluno" Height="450" Width="800">
+        Title="CadastroAluno" Height="450" Width="800"
+        ResizeMode="NoResize"
+
+        >
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Telas/Imagens/fundo.png"/>
         </Grid.Background>
-        <Label Content="Criar minha conta" HorizontalAlignment="Left" Height="33" Margin="325,40,0,0" VerticalAlignment="Top" Width="184" FontFamily="Rubik" Foreground="White" FontSize="20" />
-        <Label Content="Informe os seus dados abaixo para criar sua conta." HorizontalAlignment="Left" Height="32" Margin="168,73,0,0" VerticalAlignment="Top" Width="485" FontFamily="Rubik" Foreground="White" FontSize="20"/>
-        <Label Content="Nome Completo:" HorizontalAlignment="Left" Height="27" Margin="260,145,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
-        <Label Content="CPF:" HorizontalAlignment="Left" Height="27" Margin="260,0,0,0" VerticalAlignment="Center" Width="104" Foreground="White"/>
-        <Label Content="Matricula:" HorizontalAlignment="Left" Height="27" Margin="260,177,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
-        <Label Content="Data Nascimento:" HorizontalAlignment="Left" Height="27" Margin="260,231,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
-        <Label Content="Nome Pai:" HorizontalAlignment="Left" Height="27" Margin="260,263,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
-        <Label Content="Nome Mãe:" HorizontalAlignment="Left" Height="27" Margin="260,295,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="364,148,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="321,180,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="303"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="293,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="331"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="364,236,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="330,266,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="294"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="330,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" TextChanged="TextBox_TextChanged"/>
-        <Button Content="Entrar" FontFamily="Yu Gothic UI Semibold" FontSize="14" Background="#FFEAA865" Margin="344,337,322,74" />
+
+        <StackPanel RenderTransformOrigin="0.498,0.015" Margin="242,217,400,70">
+            <Label Content="Nome Completo:" Height="31" Width="133" Foreground="White" FontSize="16"/>
+            <Label Content="CPF:" Height="27" Width="132" Foreground="White" FontSize="16"/>
+            <Label Content="Matricula:" Height="27" Width="130" Foreground="White" FontSize="16"/>
+            <Label Content="Data Nascimento:" Height="28" Width="132" Foreground="White" FontSize="16"/>
+            <Label Content="Nome Pai:" HorizontalAlignment="Left" Height="27" Margin="228,322,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
+            <Label Content="Nome Mãe:" HorizontalAlignment="Left" Height="27" Margin="228,354,0,0" VerticalAlignment="Top" Width="104" Foreground="White"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="332,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="260"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="289,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="303"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="262,265,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="303"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="332,295,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="298,325,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="294"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="298,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" TextChanged="TextBox_TextChanged"/>
+            <Button Content="Entrar" FontFamily="Yu Gothic UI Semibold" FontSize="14" Background="#FFEAA865" Margin="312,396,354,15" Click="Button_Click" />
+            <Ellipse HorizontalAlignment="Center" Height="116" Margin="0,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="155">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Telas/Imagens/perfil foto.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+        </StackPanel>
+        <StackPanel Margin="-32,10,-32,-2">
+            <Button Content="Entrar" FontFamily="Yu Gothic UI Semibold" FontSize="14" Background="#FFEAA865" Margin="337,358,329,53" Click="Button_Click" />
+        </StackPanel>
+
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="388,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="178"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="299,254,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="267"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="337,282,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="229" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.027"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="388,310,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="178"/>
+        <Ellipse HorizontalAlignment="Center" Height="104" Margin="0,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="126">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Telas/Imagens/perfil foto.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <StackPanel Margin="146,136,138,208">
+            <Label Content="Criar minha conta" Height="33" Width="184" FontFamily="Rubik" Foreground="White" FontSize="20"  RenderTransformOrigin="0.475,0.598" />
+            <Label Content="Informe os seus dados abaixo para criar sua conta." Height="32" Width="484" FontFamily="Rubik" Foreground="White" FontSize="20"/>
+        </StackPanel>
+
+
 
 
 

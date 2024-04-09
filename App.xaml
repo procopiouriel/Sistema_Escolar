@@ -4,6 +4,48 @@
              xmlns:local="clr-namespace:Sistema_Escolar"
              StartupUri="Telas/TelaLogin.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="ButtonRadius" TargetType="Button">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontFamily" Value="Yu Gothic UI Semibold" />
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="8" Padding="15" Margin="5" BorderBrush="#000" BorderThickness="1">
+                                <ContentPresenter Content="{TemplateBinding Content}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="Transparent"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <Style x:Key="ButtonMenu" TargetType="Button">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="0">
+                                <ContentPresenter Content="{TemplateBinding Content}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="Transparent"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
          
     </Application.Resources>
 </Application>

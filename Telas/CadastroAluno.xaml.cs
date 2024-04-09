@@ -28,5 +28,13 @@ namespace Sistema_Escolar.Telas
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            CadastroEscola tela = new CadastroEscola();
+            this.Visibility = Visibility.Collapsed;
+            tela.ShowDialog();
+        }
     }
 }

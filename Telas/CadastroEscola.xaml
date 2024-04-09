@@ -5,19 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_Escolar.Telas"
         mc:Ignorable="d"
-        Title="CadastroEscola" Height="450" Width="800">
+        Title="CadastroEscola" Height="450" Width="800"
+        ResizeMode="NoResize"
+
+        >
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Telas/Imagens/fundo.png"/>
         </Grid.Background>
-        <Label Content="Cadastrar Escola" HorizontalAlignment="Center" Height="33" Margin="0,23,0,0" VerticalAlignment="Top" Width="184" FontFamily="Rubik" Foreground="White" FontSize="20" />
-        <Label Content="Informe os dados abaixo para o cadastro." HorizontalAlignment="Left" Height="32" Margin="176,56,0,0" VerticalAlignment="Top" Width="484" FontFamily="Rubik" Foreground="White" FontSize="20"/>
-        <Label Content="Razão Social:" HorizontalAlignment="Left" Margin="201,146,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
-        <Label Content="Nome Fantasia:" HorizontalAlignment="Left" Margin="201,177,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.471,1.66" FontSize="16"/>
-        <Label Content="CPF:" HorizontalAlignment="Left" Margin="247,208,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.471,1.66" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Margin="302,153,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="179"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,184,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="162"/>
-        <TextBox HorizontalAlignment="Left" Margin="292,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="189"/>
-        <Button Content="Entrar" FontFamily="Yu Gothic UI Semibold" FontSize="14" Background="#FFEAA865" Margin="308,263,358,148" />
+        <Label Content="Cadastrar Escola" HorizontalAlignment="Left" Height="33" Margin="299,139,0,0" VerticalAlignment="Top" Width="184" FontFamily="Rubik" Foreground="White" FontSize="20" />
+        <Label Content="Informe os dados abaixo para o cadastro." HorizontalAlignment="Left" Height="32" Margin="182,177,0,0" VerticalAlignment="Top" Width="484" FontFamily="Rubik" Foreground="White" FontSize="20"/>
+        <Label Content="Razão Social:" HorizontalAlignment="Left" Margin="270,232,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label Content="Nome Fantasia:" HorizontalAlignment="Left" Margin="262,268,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.471,1.66" FontSize="16"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="262,299,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.471,1.66" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Margin="376,239,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="171"/>
+        <TextBox HorizontalAlignment="Left" Margin="385,275,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Margin="308,306,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="239"/>
+        <StackPanel>
+            <Button Content="Entrar" FontFamily="Yu Gothic UI Semibold" FontSize="14" Background="#FFEAA865" Margin="324,345,342,66" Click="Button_Click" />
+        </StackPanel>
+        <Ellipse HorizontalAlignment="Left" Height="132" Margin="321,2,0,0" Stroke="Black" VerticalAlignment="Top" Width="137">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Telas/Imagens/5310672.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
     </Grid>
 </Window>
