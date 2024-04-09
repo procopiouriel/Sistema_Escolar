@@ -33,7 +33,7 @@ namespace Sistema_Escolar.Telas
         {
 
             CadastroEscola tela = new CadastroEscola();
-            this.Visibility = Visibility.Collapsed;
+            this.Close();
             tela.ShowDialog();
         }
     }

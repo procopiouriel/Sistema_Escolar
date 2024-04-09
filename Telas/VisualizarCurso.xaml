@@ -1,0 +1,84 @@
+﻿<Window x:Class="Sistema_Escolar.Telas.VisualizarCurso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sistema_Escolar.Telas"
+        mc:Ignorable="d"
+        Title="VisualizarCurso" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Telas/Imagens/fundo.png"/>
+            </Grid.Background>
+            <Border HorizontalAlignment="Left" Height="306" Margin="6,118,0,0" VerticalAlignment="Top" Width="382" Background="White" CornerRadius="12"/>
+
+            <Label Content="Sigla:" HorizontalAlignment="Left" Height="33" Margin="10,215,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="Ano:" HorizontalAlignment="Left" Height="28" Margin="16,281,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+            <Label Content="Quantidade Vagas:" HorizontalAlignment="Left" Height="33" Margin="10,248,0,0" VerticalAlignment="Top" Width="149" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+            <Label Content="Situação:" HorizontalAlignment="Left" Height="31" Margin="16,313,0,0" VerticalAlignment="Top" Width="136" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="147,223,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="76,289,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="291" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="159,254,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="208" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="98,318,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="269" IsEnabled="False"/>
+
+
+
+
+
+
+
+
+
+
+            <Label Content="Seja bem vindo {nome}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
+
+            <Ellipse HorizontalAlignment="Left" Height="40" Margin="16,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Telas/Imagens/turma.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+
+            <Border HorizontalAlignment="Left" Height="306" Margin="415,118,0,0" VerticalAlignment="Top" Width="375" Background="White" CornerRadius="12"/>
+            <Ellipse HorizontalAlignment="Left" Height="41" Margin="427,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Telas/Imagens/livros.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <ComboBox HorizontalAlignment="Left" Margin="63,131,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.609,2.459"/>
+            <ComboBox HorizontalAlignment="Left" Margin="474,131,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.497,0.505"/>
+
+            <Label Content="Código:" HorizontalAlignment="Left" Height="36" Margin="427,211,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="Nome:" HorizontalAlignment="Left" Height="28" Margin="427,252,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="Descrição:" HorizontalAlignment="Left" Height="28" Margin="427,292,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="Coordenador:" HorizontalAlignment="Left" Height="28" Margin="428,328,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="Situação:" HorizontalAlignment="Left" Height="28" Margin="428,361,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="493,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="283" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="494,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="282" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="515,299,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="261" IsEnabled="False"/>
+
+            <!--<Ellipse HorizontalAlignment="Left" Height="42" Margin="274,32,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Telas/Imagens/perfil foto.png"/>
+            </Ellipse.Fill>
+        </Ellipse>-->
+
+
+            <Button Style="{StaticResource ButtonMenu}" Margin="748,9,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+            Background="Transparent" BorderBrush="Transparent" Click="Button_Click">
+                <Ellipse Height="42" Width="42" Stroke="Black">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Telas/Imagens/images-removebg-preview.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Button>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="539,336,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="237" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="504,369,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="272" IsEnabled="False"/>
+
+        </Grid>
+
+    </Grid>
+</Window>

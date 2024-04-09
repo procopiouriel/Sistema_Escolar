@@ -27,8 +27,8 @@ namespace Sistema_Escolar.Telas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            TelaLogin tela = new TelaLogin();
-            this.Visibility = Visibility.Collapsed;
+            CadastrarTurma tela = new CadastrarTurma();
+            this.Close();
             tela.ShowDialog();
         }
     }

@@ -27,7 +27,7 @@ namespace Sistema_Escolar.Telas
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             CadastroEscola tela = new CadastroEscola();
-            this.Visibility = Visibility.Collapsed;
+            this.Close();
             tela.ShowDialog();
         }
 
@@ -35,14 +35,21 @@ namespace Sistema_Escolar.Telas
         {
 
             TelaLogin tela = new TelaLogin();
-            this.Visibility = Visibility.Collapsed;
+            this.Close();
             tela.ShowDialog();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             CadastroAluno tela = new CadastroAluno();
-            this.Visibility = Visibility.Collapsed;
+            this.Close();
+            tela.ShowDialog();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            VisualizarCurso tela = new VisualizarCurso();
+            this.Close();
             tela.ShowDialog();
         }
     }

@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Telas\CadastrarCurso.xaml.cs">
+      <DependentUpon>CadastrarCurso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastrarTurma.xaml.cs">
+      <DependentUpon>CadastrarTurma.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadastroAluno.xaml.cs">
       <DependentUpon>CadastroAluno.xaml</DependentUpon>
     </Compile>
@@ -71,6 +77,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Telas\VisualizarCurso.xaml.cs">
+      <DependentUpon>VisualizarCurso.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Telas\CadastrarCurso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\CadastrarTurma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Telas\CadastroAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,6 +101,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Telas\TelaLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\VisualizarCurso.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,6 +164,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Telas\Imagens\images-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telas\Imagens\livros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telas\Imagens\turma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Telas\images %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
