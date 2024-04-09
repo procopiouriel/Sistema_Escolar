@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_Escolar.Telas"
         mc:Ignorable="d"
-        Title="CadastrarTurma" Height="450" Width="800">
+        Title="CadastrarTurma" Height="450" Width="800"
+                ResizeMode="NoResize"
+
+        >
     <Grid Margin="0,0,0,-85">
         <Grid.Background>
             <ImageBrush ImageSource="/Telas/Imagens/fundo.png"/>
