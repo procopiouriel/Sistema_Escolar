@@ -1,15 +1,13 @@
-﻿<Window x:Class="Sistema_Escolar.Telas.CadastrarCurso"
+﻿<Window x:Class="Sistema_Escolar.Telas.RecadastrarCurso"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sistema_Escolar.Telas"
         mc:Ignorable="d"
-        Title="CadastrarCurso" Height="450" Width="800"
-                ResizeMode="NoResize"
-                WindowStartupLocation="CenterScreen"
-
->
+        Title="RecadastrarCurso" Height="450" Width="800"
+        ResizeMode="NoResize"
+                WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-29">
         <Grid.Background>
             <ImageBrush ImageSource="/Recursos/Imagens/fundo.png"/>

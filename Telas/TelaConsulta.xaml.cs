@@ -26,7 +26,7 @@ namespace Sistema_Escolar.Telas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CadastroEscola tela = new CadastroEscola();
+            RecadastrarEscola tela = new RecadastrarEscola();
             this.Close();
             tela.ShowDialog();
         }
@@ -41,7 +41,7 @@ namespace Sistema_Escolar.Telas
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            CadastroAluno tela = new CadastroAluno();
+            RecadastrarCurso tela = new RecadastrarCurso();
             this.Close();
             tela.ShowDialog();
         }
@@ -51,6 +51,20 @@ namespace Sistema_Escolar.Telas
             VisualizarCurso tela = new VisualizarCurso();
             this.Close();
             tela.ShowDialog();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            RecadastrarTurma tela = new RecadastrarTurma();
+            this.Close();
+            tela.Show();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            RecadastrarAluno tela = new RecadastrarAluno();
+            this.Close();
+            tela.Show();
         }
     }
 }

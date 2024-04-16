@@ -15,26 +15,19 @@ using System.Windows.Shapes;
 namespace Sistema_Escolar.Telas
 {
     /// <summary>
-    /// Lógica interna para TelaLogin.xaml
+    /// Lógica interna para RecadastrarEscola.xaml
     /// </summary>
-    public partial class TelaLogin : Window
+    public partial class RecadastrarEscola : Window
     {
-        public TelaLogin()
+        public RecadastrarEscola()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CadastroAluno tela = new CadastroAluno();
-            this.Close();
-            tela.Show();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
             TelaConsulta tela = new TelaConsulta();
-            this.Close(); 
+            this.Close();
             tela.Show();
         }
     }

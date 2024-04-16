@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TelaLogin.xaml.cs">
+      <DependentUpon>TelaLogin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadastrarCurso.xaml.cs">
       <DependentUpon>CadastrarCurso.xaml</DependentUpon>
     </Compile>
@@ -67,11 +70,20 @@
     <Compile Include="Telas\CadastroEscola.xaml.cs">
       <DependentUpon>CadastroEscola.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Telas\RecadastrarAluno.xaml.cs">
+      <DependentUpon>RecadastrarAluno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RecadastrarCurso.xaml.cs">
+      <DependentUpon>RecadastrarCurso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RecadastrarEscola.xaml.cs">
+      <DependentUpon>RecadastrarEscola.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RecadastrarTurma.xaml.cs">
+      <DependentUpon>RecadastrarTurma.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaConsulta.xaml.cs">
       <DependentUpon>TelaConsulta.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\TelaLogin.xaml.cs">
-      <DependentUpon>TelaLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -80,6 +92,10 @@
     <Compile Include="Telas\VisualizarCurso.xaml.cs">
       <DependentUpon>VisualizarCurso.xaml</DependentUpon>
     </Compile>
+    <Page Include="TelaLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Telas\CadastrarCurso.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -96,11 +112,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\TelaConsulta.xaml">
+    <Page Include="Telas\RecadastrarAluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Telas\TelaLogin.xaml">
+    <Page Include="Telas\RecadastrarCurso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\RecadastrarEscola.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\RecadastrarTurma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Telas\TelaConsulta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,43 +164,46 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\Captura de Tela %285%29.png" />
+    <Resource Include="Recursos\Imagens\Captura de Tela %285%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\fundo.png" />
+    <Resource Include="Recursos\Imagens\fundo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\cor.png" />
+    <Resource Include="Recursos\Imagens\cor.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\cor 2.png" />
+    <Resource Include="Recursos\Imagens\cor 2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\perfil foto.png" />
+    <Resource Include="Recursos\Imagens\perfil foto.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\cadeado.png" />
+    <Resource Include="Recursos\Imagens\cadeado.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\logo_ifro-removebg-preview.png" />
+    <Resource Include="Recursos\Imagens\logo_ifro-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\5310672.png" />
+    <Resource Include="Recursos\Imagens\5310672.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\images.png" />
+    <Resource Include="Recursos\Imagens\images.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\images-removebg-preview.png" />
+    <Resource Include="Recursos\Imagens\images-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\livros.png" />
+    <Resource Include="Recursos\Imagens\livros.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\Imagens\turma.png" />
+    <Resource Include="Recursos\Imagens\turma.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Telas\images %281%29.png" />
+    <Folder Include="Recursos\Fontes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\Imagens\olho.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

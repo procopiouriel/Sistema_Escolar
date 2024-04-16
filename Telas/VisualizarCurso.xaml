@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="VisualizarCurso" Height="450" Width="800"
                 ResizeMode="NoResize"
+                WindowStartupLocation="CenterScreen"
+
 >
     <Grid>
         <Grid>
             <Grid.Background>
-                <ImageBrush ImageSource="/Telas/Imagens/fundo.png"/>
+                <ImageBrush ImageSource="/Recursos/Imagens/fundo.png"/>
             </Grid.Background>
-            <Border HorizontalAlignment="Left" Height="306" Margin="6,118,0,0" VerticalAlignment="Top" Width="382" Background="White" CornerRadius="12"/>
+            <Border HorizontalAlignment="Left" Height="322" Margin="6,102,0,0" VerticalAlignment="Top" Width="382" Background="White" CornerRadius="12"/>
 
             <Label Content="Sigla:" HorizontalAlignment="Left" Height="33" Margin="10,215,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
             <Label Content="Ano:" HorizontalAlignment="Left" Height="28" Margin="16,281,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
@@ -36,21 +38,21 @@
 
             <Label Content="Seja bem vindo {nome}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
 
-            <Ellipse HorizontalAlignment="Left" Height="40" Margin="16,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+            <Ellipse HorizontalAlignment="Left" Height="50" Margin="16,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="52">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Telas/Imagens/turma.png"/>
+                    <ImageBrush ImageSource="/Recursos/Imagens/turma.png"/>
                 </Ellipse.Fill>
             </Ellipse>
 
 
-            <Border HorizontalAlignment="Left" Height="306" Margin="415,118,0,0" VerticalAlignment="Top" Width="375" Background="White" CornerRadius="12"/>
-            <Ellipse HorizontalAlignment="Left" Height="41" Margin="427,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+            <Border HorizontalAlignment="Left" Height="322" Margin="415,102,0,0" VerticalAlignment="Top" Width="375" Background="White" CornerRadius="12"/>
+            <Ellipse HorizontalAlignment="Left" Height="51" Margin="427,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="53">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Telas/Imagens/livros.png"/>
+                    <ImageBrush ImageSource="/Recursos/Imagens/livros.png"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <ComboBox HorizontalAlignment="Left" Margin="63,131,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.609,2.459"/>
-            <ComboBox HorizontalAlignment="Left" Margin="474,131,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.497,0.505"/>
+            <ComboBox HorizontalAlignment="Left" Margin="73,136,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.609,2.459"/>
+            <ComboBox HorizontalAlignment="Left" Margin="493,131,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.497,0.505"/>
 
             <Label Content="Código:" HorizontalAlignment="Left" Height="36" Margin="427,211,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
             <Label Content="Nome:" HorizontalAlignment="Left" Height="28" Margin="427,252,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
@@ -72,7 +74,7 @@
             Background="Transparent" BorderBrush="Transparent" Click="Button_Click">
                 <Ellipse Height="42" Width="42" Stroke="Black">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Telas/Imagens/images-removebg-preview.png"/>
+                        <ImageBrush ImageSource="/Recursos/Imagens/images-removebg-preview.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>

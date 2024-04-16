@@ -7,107 +7,115 @@
         mc:Ignorable="d"
         Title="TelaInicial" Height="450" Width="800"
         ResizeMode="NoResize"
+                WindowStartupLocation="CenterScreen"
+
 >
     <Grid>
-        <Grid>
+        <Grid Margin="0,0,0,-13">
             <Grid.Background>
-                <ImageBrush ImageSource="/Telas/Imagens/fundo.png"/>
+                <ImageBrush ImageSource="/Recursos/Imagens/fundo.png"/>
             </Grid.Background>
-            <Border HorizontalAlignment="Center" Height="45" Margin="0,77,0,0" VerticalAlignment="Top" Width="455" Background="White" CornerRadius="12"/>
-            <Border HorizontalAlignment="Left" Height="287" Margin="6,137,0,0" VerticalAlignment="Top" Width="382" Background="White" CornerRadius="12"/>
+            <Border HorizontalAlignment="Center" Height="45" Margin="0,118,0,0" VerticalAlignment="Top" Width="456" Background="White" CornerRadius="12"/>
+            <Border HorizontalAlignment="Left" Height="248" Margin="6,176,0,0" VerticalAlignment="Top" Width="382" Background="White" CornerRadius="12"/>
 
-            <Label Content="Nome Completo:" HorizontalAlignment="Left" Height="28" Margin="10,215,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
-            <Label Content="CPF:" HorizontalAlignment="Left" Height="28" Margin="10,281,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-            <Label Content="Matricula:" HorizontalAlignment="Left" Height="28" Margin="10,248,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-            <Label Content="Data Nascimento:" HorizontalAlignment="Left" Height="31" Margin="10,309,0,0" VerticalAlignment="Top" Width="136" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-            <Label Content="Nome Pai:" HorizontalAlignment="Left" Height="31" Margin="10,340,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16" RenderTransformOrigin="0.429,0.206"/>
-            <Label Content="Nome Mãe:" HorizontalAlignment="Left" Height="31" Margin="10,371,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="147,223,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="103,252,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="269" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="62,284,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="21" Margin="147,310,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="103,346,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="259" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="108,376,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="259" IsEnabled="False"/>
-
-
-
-
-
-
-
-
+            <Label Content="Nome Completo:" HorizontalAlignment="Left" Height="28" Margin="10,244,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="CPF:" HorizontalAlignment="Left" Height="28" Margin="11,308,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+            <Label Content="Matricula:" HorizontalAlignment="Left" Height="28" Margin="11,277,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+            <Label Content="Data Nascimento:" HorizontalAlignment="Left" Height="31" Margin="11,330,0,0" VerticalAlignment="Top" Width="136" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+            <Label Content="Nome Pai:" HorizontalAlignment="Left" Height="31" Margin="10,356,0,0" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16" RenderTransformOrigin="0.429,0.206"/>
+            <Label Content="Nome Mãe:" HorizontalAlignment="Left" Height="31" Margin="10,386,0,1" VerticalAlignment="Top" Width="104" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="16"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="147,252,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="98,283,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="269" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="63,308,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="21" Margin="147,335,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="103,362,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="259" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="108,392,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="259" IsEnabled="False"/>
 
 
             <Label Content="Seja bem vindo {nome}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Yu Gothic UI Semibold"/>
 
-            <Ellipse HorizontalAlignment="Left" Height="41" Margin="20,155,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+            <Ellipse HorizontalAlignment="Left" Height="41" Margin="21,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Telas/Imagens/perfil foto.png"/>
+                    <ImageBrush ImageSource="/Recursos/Imagens/perfil foto.png"/>
                 </Ellipse.Fill>
             </Ellipse>
 
 
-            <Border HorizontalAlignment="Left" Height="287" Margin="415,137,0,0" VerticalAlignment="Top" Width="375" Background="White" CornerRadius="12"/>
-            <Ellipse HorizontalAlignment="Left" Height="41" Margin="441,155,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
+            <Border HorizontalAlignment="Left" Height="248" Margin="415,176,0,0" VerticalAlignment="Top" Width="375" Background="White" CornerRadius="12"/>
+            <Ellipse HorizontalAlignment="Left" Height="41" Margin="441,188,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Telas/Imagens/5310672.png"/>
+                    <ImageBrush ImageSource="/Recursos/Imagens/5310672.png"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <ComboBox HorizontalAlignment="Left" Margin="78,160,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.609,2.459"/>
-            <ComboBox HorizontalAlignment="Left" Margin="500,165,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.497,0.505"/>
+            <ComboBox HorizontalAlignment="Left" Margin="79,195,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.609,2.459"/>
+            <ComboBox HorizontalAlignment="Left" Margin="500,198,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.497,0.505"/>
 
-            <Label Content="Razão Social:" HorizontalAlignment="Left" Height="28" Margin="427,211,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
-            <Label Content="Nome Fantasia:" HorizontalAlignment="Left" Height="28" Margin="427,252,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
-            <Label Content="CNPJ:" HorizontalAlignment="Left" Height="28" Margin="427,292,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="533,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="551,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
-            <TextBox HorizontalAlignment="Left" Height="20" Margin="479,300,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="297" IsEnabled="False"/>
-            <Border HorizontalAlignment="Center" Height="45" Margin="0,19,0,0" VerticalAlignment="Top" Width="302" Background="White" CornerRadius="12"/>
-            <Label Content="Cadastrar" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.457,1.042" Height="33" Width="88" FontSize="16"/>
+            <Label Content="Razão Social:" HorizontalAlignment="Left" Height="28" Margin="428,273,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="Nome Fantasia:" HorizontalAlignment="Left" Height="28" Margin="428,312,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <Label Content="CNPJ:" HorizontalAlignment="Left" Height="28" Margin="428,358,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" FontFamily="Yu Gothic UI Semibold" Background="{x:Null}" FontSize="16" />
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="533,280,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="243" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="551,320,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="225" IsEnabled="False"/>
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="479,362,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="297" IsEnabled="False"/>
+            <Border HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="404" Background="White" CornerRadius="12" Margin="195,35,0,0"/>
+            <Label Content="Cadastrar" HorizontalAlignment="Left" Margin="350,29,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.457,1.042" Height="34" Width="88" FontSize="16"/>
 
-            <!--<Ellipse HorizontalAlignment="Left" Height="42" Margin="274,32,0,0" Stroke="Black" VerticalAlignment="Top" Width="42">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Telas/Imagens/perfil foto.png"/>
-                </Ellipse.Fill>
-            </Ellipse>-->
-            <Button Style="{StaticResource ButtonMenu}" Margin="479,19,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
-                    Background="Transparent" BorderBrush="Transparent" Click="Button_Click">
+            <Button Style="{StaticResource ButtonMenu}" Margin="536,54,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                    Background="Transparent" BorderBrush="Transparent" Click="Button_Click" RenderTransformOrigin="0.649,0.507">
                 <Ellipse Height="42" Width="42" Stroke="Black">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Telas/Imagens/5310672.png"/>
+                        <ImageBrush ImageSource="/Recursos/Imagens/5310672.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>
 
-            <Button Style="{StaticResource ButtonMenu}" Margin="269,19,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
-                Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2">
+            <Button Style="{StaticResource ButtonMenu}" Margin="215,54,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Background="Transparent" BorderBrush="Transparent" Click="Button_Click_5">
                 <Ellipse Height="42" Width="42" Stroke="Black">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Telas/Imagens/perfil foto.png"/>
+                        <ImageBrush ImageSource="/Recursos/Imagens/perfil foto.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>
+
+            <Button Style="{StaticResource ButtonMenu}" Margin="317,54,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Background="Transparent" BorderBrush="Transparent" Click="Button_Click_3">
+                <Ellipse Height="42" Width="42" Stroke="Black">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Recursos/Imagens/turma.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Button>
+
+            <Button Style="{StaticResource ButtonMenu}" Margin="417,54,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+      Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2">
+                <Ellipse Height="42" Width="42" Stroke="Black">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="/Recursos/Imagens/livros.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Button>
+
 
             <Button Style="{StaticResource ButtonMenu}" Margin="748,9,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
                 Background="Transparent" BorderBrush="Transparent" Click="Button_Click_1">
                 <Ellipse Height="42" Width="42" Stroke="Black">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Telas/Imagens/images-removebg-preview.png"/>
+                        <ImageBrush ImageSource="/Recursos/Imagens/images-removebg-preview.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>
 
-          
 
-            <Button Style="{StaticResource ButtonMenu}" Margin="280,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+
+            <Button Style="{StaticResource ButtonMenu}" Margin="260,118,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
                 Background="Transparent" BorderBrush="Transparent" Click="Button_Click_4">
                 <Ellipse Height="42" Width="42" Stroke="Black">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="/Telas/images (1).png"/>
+                        <ImageBrush ImageSource="/Recursos/Imagens/olho.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </Button>
-            <Label Content="Visualizar Restante" HorizontalAlignment="Left" Margin="335,84,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.457,1.042" Height="34" Width="158" FontSize="16"/>
+            <Label Content="Visualizar Restante" HorizontalAlignment="Left" Margin="318,124,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Yu Gothic UI Semibold" RenderTransformOrigin="0.457,1.042" Height="34" Width="158" FontSize="16"/>
 
         </Grid>
 
